@@ -1,0 +1,148 @@
+#app {
+    background-color: #f5f7f9;
+    min-height: 100vh;
+    color: #4a4f56;
+    padding-top: 100px;
+}
+
+.page-item {
+    .page-link {
+        color: #459671 !important;
+        box-shadow: none !important;
+    }
+    &.disabled {
+        .page-link {
+            color: #6c757d !important;
+        }
+    }
+    &.active {
+        .page-link {
+            background-color: #459671 !important;
+            border-color: #459671 !important;
+            color: #fff !important;
+        }
+    }
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 100px !important;
+    padding: 10px 15px !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+}
+
+.btn-success {
+    background: #459672 !important;
+    svg {
+        margin-right: 15px;
+    }
+}
+
+.formButton {
+    &.sendButton {
+        position: absolute;
+        bottom: 15px;
+    }
+    &.btn-outline-primary {
+        color: #636c73;
+        border-color: #636c73;
+    }
+    &.btn-outline-primary:hover {
+        background-color: #636c73;
+        border-color: #636c73;
+    }
+    &.btn-outline-primary:active {
+        background-color: #636c73 !important;
+        border-color: #636c73 !important;
+    }
+    border-radius: 5px !important;
+    font-weight: normal !important;
+    padding: 10px 20px !important;
+}
+
+.avatar-container {
+    border-radius: 9999px;
+    height: 50px;
+}
+
+.big-avatar {
+    border-radius: 9999px;
+    display: table;
+    margin: 25px auto;
+    height: 150px;
+}
+
+.table-list {
+    min-width: 400px;
+    tr {
+      td, th {
+          padding: 10px;
+      }
+    }
+    tr:nth-child(even) {
+        td {
+            background-color: #f5f7f9;
+        }
+    }
+    svg {
+        color: #aeb5bc;
+    }
+}
+
+.filter-input {
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    display: table;
+    width: 300px;
+    max-width: 100%;
+    input {
+        background: transparent;
+        border: none;
+        width: calc(100% - 36px);
+        display: table;
+        float: left;
+        color: #4a4f56;
+        padding: 5px;
+    }
+    input::placeholder {
+        font-weight: 600;
+    }
+    input:focus {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+    svg {
+        display: table;
+        float: right;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .formButton {
+        &.sendButton {
+            position: unset;
+            bottom: unset;
+            margin-top: 10px;
+        }
+    }
+    .card.h-100 {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .redirectButton {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .filter-input {
+        width: 100% !important;
+    }
+}
